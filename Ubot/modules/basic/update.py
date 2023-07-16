@@ -223,7 +223,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: AmangUbot Deploy Update is in Progress...`"
+            "`[HEROKU]: Arab-Pyro Deploy Update is in Progress...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -240,7 +240,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`AmangUbot Successfully Updated! Userbot can be used again.`"
+            "`Arab-Pyro Successfully Updated! Userbot can be used again.`"
         )
     else:
         try:
@@ -249,7 +249,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`AmangUbot Successfully Updated! Userbot can be used again.`",
+            "`Arab-Pyro Successfully Updated! Userbot can be used again.`",
         )
         args = [sys.executable, "-m", "Ubot"]
         execle(sys.executable, *args, environ)
