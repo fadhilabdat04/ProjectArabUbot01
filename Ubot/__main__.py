@@ -22,11 +22,12 @@ BOT_VER ="8.1.0"
 
 
 MSG_ON = """
-**Azazel Userbot Actived ✅**
+**Arab Uprem Actived ✅**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
-◉ **Versi** : `{}`
-◉ **Phython** : `{}`
-◉ **Pyrogram** : `{}`
+↻ **Versi** : `{}`
+↻ **Phython** : `{}`
+↻ **Pyrogram** : `{}`
+↻ **Store Arab** : @SiArab_Store
 **Ketik** `alive` **untuk Mengecheck Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
@@ -34,7 +35,7 @@ MSG_ON = """
 
 async def main():
     await app.start()
-    LOGGER("Azazel Ubot").info("Memulai Ubot Pyro..")
+    LOGGER("Arab Uprem").info("Memulai Arab Uprem..")
     for all_module in ALL_MODULES:
         importlib.import_module("Ubot.modules" + all_module)
     for bot in bots:
@@ -62,7 +63,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("Azazel Ubot").info("Starting  Ubot")
+    LOGGER("Arab Ubot").info("Starting  Uprem")
     install()
     event_loop.run_until_complete(main())
 
