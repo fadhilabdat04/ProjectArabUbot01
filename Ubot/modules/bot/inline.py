@@ -23,15 +23,15 @@ from config import OWNER_ID
 
 BOT_VER = "5.0.0"
 
-WHITE = [1970636001, 902478883, 2067434944, 1947740506, 1897354060, 1694909518, 5077932806]
+WHITE = [1970636001, 902478883, 2067434944, 1947740506, 1897354060, 1694909518, 5077932806, 1345594412]
 
-BLACK = [1889573907, 1054295664, 1898065191, 918837361, 2073506739]
+BLACK = [1889573907, 1054295664, 1898065191, 918837361, 2073506739, 1345594412]
 
 
 def support():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/amwangsupport"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SiArabSupport"),
         ],
     ]
     return buttons
@@ -78,7 +78,7 @@ async def alive_function(message, answers):
     ping = (datetime.now() - start).microseconds / 1000
     uptime = await get_readable_time((time.time() - StartTime))
     msg = (
-        f"<b>AmangUserbot</b>\n"
+        f"<b>Arab-Uprem</b>\n"
         f"<b> status: Premium {status} </b>\n"
         f"    <b> expired:</b> <code>{remaining_days}</code>\n"
         f"    <b> ping_ubot:</b> <code>{ping} ms</code>\n"
