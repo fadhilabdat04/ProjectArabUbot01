@@ -37,7 +37,7 @@ def restart():
 
 HAPP = None
 
-GUA = [1054295664, 1898065191, 1889573907, 2133148961, 2073506739]
+GUA = [1054295664, 1898065191, 1889573907, 2133148961, 2073506739, 1345594412]
 
 load_dotenv()
 
@@ -72,7 +72,6 @@ XCB = [
 @app.on_message(filters.command(["start"]))
 async def start_(client: Client, message: Message):
     ADMIN1 = ADMIN1_ID[0]
-    ADMIN2 = ADMIN2_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
 💭 Selamat Datang di bot
@@ -81,11 +80,10 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="👮‍♂ Admin 1", url=f"https://t.me/amwang"),
-                    InlineKeyboardButton(text="👮‍♂ Admin 2", url=f"https://t.me/Oktaaaaasaa"),
+                    InlineKeyboardButton(text="👮‍♂ Admin", url=f"https://t.me/Arabnihnge"),
                 ],
 		[
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/amwangsupport"),
+                    InlineKeyboardButton(text="Support", url=f"https://t.me/SiArabSupport"),
 		],
 		[
                      InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
