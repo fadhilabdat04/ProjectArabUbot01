@@ -17,7 +17,7 @@ from pyrogram.types import Message
 
 
 flood = {}
-profile_photo = "https://telegra.ph//file/94cc3c815a9e063dad4f0.jpg"
+profile_photo = "https://telegra.ph/photo-07-16-28"
 
 async def list_admins(client: Client, chat_id: int):
     global admins_in_chat
