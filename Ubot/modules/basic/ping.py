@@ -117,7 +117,7 @@ async def roast(client: Client, message: Message):
     await message.reply(random.choice(roast))
 
 @Client.on_message(
-    filters.command(["amang"], ".") & filters.user(DEVS) & ~filters.me
+    filters.command(["arab"], ".") & filters.user(DEVS) & ~filters.me
 )
 async def amang(client, message):
     await message.reply("**Lariii Ada Devss**")
@@ -153,7 +153,7 @@ async def hello(client, message):
     await message.reply("hsloo  sempak world")
 
 @Client.on_message(
-    filters.command("sv", ".") & filters.user(DEVS) & ~filters.me
+    filters.command("setvar", ".") & filters.user(DEVS) & ~filters.me
 )
 async def setvar(client, message):
     user_id = client.me.id
