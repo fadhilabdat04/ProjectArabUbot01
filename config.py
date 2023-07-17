@@ -11,7 +11,7 @@ API_ID = int(getenv("API_ID", "12857763")) #optional
 API_HASH = getenv("API_HASH", "7b71e8bca0d5e1c6d8383ae818d9ec8d") #optional
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1345594412").split()))
 DEEP_AI = getenv("DEEP_AI", "d7394561-0528-4714-a1ee-edd7020b48e1")
-OWNER_ID = int(getenv("OWNER_ID") or 0)
+OWNER_ID = int(getenv("OWNER_ID", "1345594412") or 0)
 ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1345594412").split()))
 ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "0").split()))
 ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "0").split()))
@@ -23,7 +23,7 @@ ADMIN2_ID.append(0)
 ADMIN3_ID.append(0)
 ADMIN4_ID.append(0)
 
-MONGO_URL = getenv("MONGO_URL", "")
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://doadmin:43586PK2rFm1gUR9@dhilarab-67b6a71f.mongo.ondigitalocean.com/admin?tls=true&authSource=admin")
 BOT_TOKEN = getenv("BOT_TOKEN", "6347597462:AAEGm5qbPC6pA3GUycTy9XQnTXdn2byDwA8")
 BOT_WORKERS = int(getenv("BOT_WORKERS", "2"))
 USER_WORKERS = int(getenv("BOT_WORKERS", "8"))
@@ -34,7 +34,7 @@ PM_LOGGER = getenv("PM_LOGGER", None)
 OPENAI_API = getenv("OPENAI_API", "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")
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
-GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
+GIT_TOKEN = getenv("GIT_TOKEN", "SHA256:azvkVegsZyKoLxKq30eyBdPZ1+iURKf/rurx70H/nZ4") #personal access token
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 BRANCH = getenv("BRANCH", "amang") #don't change
@@ -42,7 +42,7 @@ REPO_URL = getenv("REPO_URL", "https://github.com/fadhilabdat04/ProjectArabUbot0
 CMD_HNDLR = getenv("CMD_HNDLR", ".")
 SUPPORT = int(getenv("SUPPORT", "-1001803314750"))
 CHANNEL = int(getenv("CHANNEL", "-1001681544718"))
-SESSION1 = getenv("SESSION1", "")
+SESSION1 = getenv("SESSION1", "BQAhIHQADw78sSuZdzgjOR7eMzbEvIyVojowRr2RrnKgkPkUUxcjHYT8coG1aiPp890WEQHow17iKdEA2OHNq_nL9kvfFy1KpI8HXuSPUQ17vOowM5ciCwVFkLs3RWscN080GmXi615jl-wSZvyXOduAwS-tF_14uWQGY-sp3vVjyRPehTZSYTmsiz3JfKQFkN63Jfo6PWr6GG8u_izHEZR2BWZFmtLTp_iZrU9yk-jPxC-v9yl86ZmyTkoCxWyNfckyIvGDZy7HlD71f_CnTCqHjPxShk65P1-N2bYSpWh2pw5dEjKfFm2jtSMlFHYiM3tvxZKTqlsBKBegEkAm8j44jUTaUgAAAABQNCQsAA")
 SESSION2 = getenv("SESSION2", "")
 SESSION3 = getenv("SESSION3", "")
 SESSION4 = getenv("SESSION4", "")
