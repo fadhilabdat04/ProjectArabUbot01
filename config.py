@@ -7,41 +7,41 @@ from distutils.util import strtobool
 load_dotenv(".env")
 
 
-API_ID = int(getenv("API_ID")) #optional
-API_HASH = getenv("API_HASH") #optional
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
+API_ID = int(getenv("API_ID", "12857763")) #optional
+API_HASH = getenv("API_HASH", "7b71e8bca0d5e1c6d8383ae818d9ec8d") #optional
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1345594412").split()))
 DEEP_AI = getenv("DEEP_AI", "d7394561-0528-4714-a1ee-edd7020b48e1")
 OWNER_ID = int(getenv("OWNER_ID") or 0)
-ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
-ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
-ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "2073506739").split()))
-ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "918837361").split()))
+ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1345594412").split()))
+ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "0").split()))
+ADMIN3_ID = list(map(int, getenv("ADMIN2_ID", "0").split()))
+ADMIN4_ID = list(map(int, getenv("ADMIN2_ID", "0").split()))
 
 
-ADMIN1_ID.append(1054295664)
-ADMIN2_ID.append(1755047203)
-ADMIN3_ID.append(2073506739)
-ADMIN4_ID.append(918837361)
+ADMIN1_ID.append(1345594412)
+ADMIN2_ID.append(0)
+ADMIN3_ID.append(0)
+ADMIN4_ID.append(0)
 
 MONGO_URL = getenv("MONGO_URL", "")
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6347597462:AAEGm5qbPC6pA3GUycTy9XQnTXdn2byDwA8")
 BOT_WORKERS = int(getenv("BOT_WORKERS", "2"))
 USER_WORKERS = int(getenv("BOT_WORKERS", "8"))
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
 ALIVE_PIC = getenv("ALIVE_PIC")
 ALIVE_TEXT = getenv("ALIVE_TEXT")
 PM_LOGGER = getenv("PM_LOGGER", None)
-OPENAI_API = getenv("OPENAI_API", "")
+OPENAI_API = getenv("OPENAI_API", "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")
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
 GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 BRANCH = getenv("BRANCH", "amang") #don't change
-REPO_URL = getenv("REPO_URL", "https://github.com/amanqs/AmangUbot")
+REPO_URL = getenv("REPO_URL", "https://github.com/fadhilabdat04/ProjectArabUbot01")
 CMD_HNDLR = getenv("CMD_HNDLR", ".")
-SUPPORT = int(getenv("SUPPORT", "-1001284445583"))
-CHANNEL = int(getenv("CHANNEL", "-1001772541015"))
+SUPPORT = int(getenv("SUPPORT", "-1001803314750"))
+CHANNEL = int(getenv("CHANNEL", "-1001681544718"))
 SESSION1 = getenv("SESSION1", "")
 SESSION2 = getenv("SESSION2", "")
 SESSION3 = getenv("SESSION3", "")
