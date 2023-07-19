@@ -54,7 +54,7 @@ async def _(client, message):
                 chat_id = dialog.chat.id
                 if user.id == DEVS:
                     return await nay.edit(
-                        "Anda tidak bisa gban dia, karena dia pembuat saya"
+                        "Anda tidak bisa gban dia, karena dia Dev Bot Arab-Uprem"
                     )
                 elif not user.id == DEVS:
                     try:
@@ -103,7 +103,7 @@ async def _(client, message):
                 chat_id = dialog.chat.id
                 if user.id == DEVS:
                     return await nay.edit(
-                        "Anda tidak bisa gban dia, karena dia pembuat saya"
+                        "Anda tidak bisa gban dia, karena dia Dev Bot Arab-Uprem"
                     )
                 elif not user.id == DEVS:
                     try:
