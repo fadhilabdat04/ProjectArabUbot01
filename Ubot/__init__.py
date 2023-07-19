@@ -14,7 +14,7 @@ from pytgcalls import GroupCallFactory
 from ast import parse
 from .logging import LOGGER
 from config import *
-cmds = [".", "^", "!", "?", ","]
+cmds = [".", "$", "!", "?", ","]
 CMD_HELP = {}
 clients = []
 ids = []
@@ -55,7 +55,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Amang stopped. Bye.")
+        self.LOGGER(__name__).info("Arab Uprem stopped. Bye.")
 
 
 app = Bot()
