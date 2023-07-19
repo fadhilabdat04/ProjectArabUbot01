@@ -31,7 +31,8 @@ BLACK = [1345594412]
 def support():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SiArabSupport"),
+            InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/SiArabSupport"),
+            InlineKeyboardButton(text="STORE SI ARAB", url=f"https://t.me/SiArab_Store"),
         ],
     ]
     return buttons
