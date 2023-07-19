@@ -74,9 +74,9 @@ async def start_(client: Client, message: Message):
     ADMIN1 = ADMIN1_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
-💭 Selamat Datang di bot
+💭 Selamat Datang di bot Arab Premium Userbot
 ❓ Apa saja sih fiturnya?,kalo mau lihat fitur ubotnya, pm ke admin dibawah ini.
-💡 Jika ingin membuat Userbot premium . Kamu bisa hubungin admin dibawah ini membuat bot.</b>""",
+💡 Jika ingin membuat Userbot premium . Kamu bisa hubungin admin dibawah ini untuk membuat bot.</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -84,6 +84,9 @@ async def start_(client: Client, message: Message):
                 ],
 		[
                     InlineKeyboardButton(text="Support", url=f"https://t.me/SiArabSupport"),
+		],
+		    [
+                    InlineKeyboardButton(text="Store Si Arab", url=f"https://t.me/SiArab_Store"),
 		],
 		[
                      InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
