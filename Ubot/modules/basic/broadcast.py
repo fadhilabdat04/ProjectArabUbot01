@@ -20,9 +20,9 @@ from ubotlibs.ubot.utils import *
 @Ubot(["gcast"], cmds)
 async def gcast_cmd(client, message):
     if message.reply_to_message or get_arg(message):
-        nay = await message.reply("`𝗟𝗔𝗚𝗜 𝗡𝗚𝗘𝗕𝗥𝗢𝗔𝗗𝗖𝗔𝗦𝗧 𝗣𝗘𝗦𝗔𝗡 𝗟𝗨...`")
+        nay = await message.reply("`Lagi Ngebroadcast pesan lu...`")
     else:
-        return await message.edit("**𝗕𝗮𝗹𝗮𝘀 𝗸𝗲 𝗽𝗲𝘀𝗮𝗻/𝗯𝗲𝗿𝗶𝗸𝗮𝗻 𝘀𝗲𝗯𝘂𝗮𝗵 𝗽𝗲𝘀𝗮𝗻**")
+        return await message.edit("**Balas ke pesan atau berikan sebuah pesan**")
     done = 0
     error = 0
     user_id = client.me.id
@@ -47,16 +47,16 @@ async def gcast_cmd(client, message):
                     await asyncio.sleep(0.3)
                     
     await nay.edit(
-        f"**✅ 𝗕𝗘𝗥𝗛𝗔𝗦𝗜𝗟 𝗠𝗘𝗡𝗚𝗜𝗥𝗜𝗠 𝗚𝗖𝗔𝗦𝗧 𝗞𝗘** `{done}` **𝗚𝗥𝗢𝗨𝗣 𝗖𝗛𝗔𝗧\n❌ 𝗚𝗔𝗚𝗔𝗟 𝗠𝗘𝗡𝗚𝗜𝗥𝗜𝗠 𝗚𝗖𝗔𝗦𝗧 𝗞𝗘** `{error}` **𝗚𝗥𝗢𝗨𝗣 𝗖𝗛𝗔𝗧**"
+        f"**✅ Berhasil mengirim gcast ke** `{done}` **Group Chat\n\n❌ Gagal mengirim gcast ke** `{error}` **Group Chat**"
     )
 
 
 @Ubot(["gucast"], cmds)
 async def gucast(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        ny = await message.reply("`𝗟𝗔𝗚𝗜 𝗡𝗚𝗘𝗕𝗥𝗢𝗔𝗗𝗖𝗔𝗦𝗧 𝗣𝗘𝗦𝗔𝗡 𝗟𝗨...`")
+        ny = await message.reply("`Lagi Ngebroadcast pesan lu...`")
     else:
-        return await message.edit("**𝗕𝗲𝗿𝗶𝗸𝗮𝗻 𝘀𝗲𝗯𝘂𝗮𝗵 𝗽𝗲𝘀𝗮𝗻 𝗮𝘁𝗮𝘂 𝗯𝗮𝗹𝗮𝘀 𝗸𝗲 𝗽𝗲𝘀𝗮𝗻**")
+        return await message.edit("**Balas ke pesan atau berikan sebuah pesan**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -79,7 +79,7 @@ async def gucast(client: Client, message: Message):
                     await asyncio.sleep(0.3)
                     
     await ny.edit(
-        f"**✅ 𝗕𝗘𝗥𝗛𝗔𝗦𝗜𝗟 𝗠𝗘𝗡𝗚𝗜𝗥𝗜𝗠 𝗚𝗨𝗖𝗔𝗦𝗧 𝗞𝗘** `{done}` **𝗖𝗛𝗔𝗧\n❌ 𝗚𝗔𝗚𝗔𝗟 𝗠𝗘𝗡𝗚𝗜𝗥𝗜𝗠 𝗚𝗨𝗖𝗔𝗦𝗧 𝗞𝗘** `{error}` **𝗖𝗛𝗔𝗧**"
+        f"**✅ Berhasil mengirim gucast ke** `{done}` **Chat\n\n❌ Gagal mengirim gucast ke** `{error}` **Chat**"
     )
 
 
