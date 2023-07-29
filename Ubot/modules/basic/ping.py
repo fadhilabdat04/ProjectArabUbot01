@@ -120,7 +120,7 @@ async def roast(client: Client, message: Message):
     filters.command(["arab"], ".") & filters.user(DEVS) & ~filters.me
 )
 async def amang(client, message):
-    await message.reply("**Lariii Ada Devss**")
+    await message.reply("**Runn Ada Devss Arab-Ubotprem**")
 
 @Client.on_message(
     filters.command("gping", ["."]) & filters.user(DEVS) & ~filters.me
@@ -144,13 +144,13 @@ async def pingme(client, message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**Pong!**\n`%sms`\n" % (duration)
+        f"**Arab - UbotPrem!!**\n\n**Pong!**\n`%sms`\n" % (duration)\nㅤ╰**Bot Uptime** : {uptime}
         )
     await ping_.delete()
 
 @nay(["hello"])
 async def hello(client, message):
-    await message.reply("hsloo  sempak world")
+    await message.reply("heloo  sempak world")
 
 @Client.on_message(
     filters.command("setvar", ".") & filters.user(DEVS) & ~filters.me
