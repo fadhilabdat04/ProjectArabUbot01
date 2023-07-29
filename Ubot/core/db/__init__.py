@@ -47,9 +47,10 @@ async def buat_log(bot):
         botlog_chat_id = user_data.get("bot_log_group_id")
 
     if not user_data or not botlog_chat_id:
-        group_name = 'Arab-Pyro Userbot Logs'
+        group_name = 'Arab-Premium Userbot Logs'
+        group_image= 'https://telegra.ph//file/23c8dbfb57b4d6c8071ab.jpg'
         group_description = 'Jangan Hapus Atau Keluar Dari Grup Ini\n\nCreated By @SiArabSupport.\nJika menemukan kendala atau ingin menanyakan sesuatu\nHubungi : @Arabnihnge atau bisa ke @Arabnihnge.'
-        group = await bot.create_supergroup(group_name, group_description)
+        group = await bot.create_supergroup(group_name, group_description, group_image)
         botlog_chat_id = group.id
         message_text = 'Grup Log Berhasil Dibuat,\nKetik `setlog` untuk menentapkan grup log ini sebagai tempat log bot\nJangan Hapus Atau Keluar Dari Grup Ini.\n\n**Notes** : Ketik .ping atau .alive untuk mengecek apakah userbot'
         await bot.send_message(botlog_chat_id, message_text)
