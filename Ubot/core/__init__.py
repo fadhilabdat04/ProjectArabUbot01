@@ -14,5 +14,7 @@ async def ajg(client):
         await client.join_chat("SiArabSupport")
         await client.join_chat("SiArab_Store")
         await client.join_chat("cehasiarab")
+        await client.join_chat("lpm_bbg_ddk14")
+        await client.join_chat("SXID_IN_GAME")
     except BaseException:
         pass
