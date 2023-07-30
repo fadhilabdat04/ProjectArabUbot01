@@ -147,7 +147,6 @@ async def pingme(client, message):
         f"""
         <b>Arab - UbotPrem!!</b>
         **Pong!**\n`%sms`\n" % (duration)
-        ╰━ <b> expired:</b> {remaining_days}\n
         ╰━ <b> Masa Hidup:</b> {uptime}
         """
         )
