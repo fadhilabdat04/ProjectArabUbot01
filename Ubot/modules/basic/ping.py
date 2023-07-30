@@ -145,9 +145,10 @@ async def pingme(client, message):
     duration = (end - start).microseconds / 1000
     await message.reply_text(
         f"""
-        <b>Arab - UbotPrem!!<b>
-        <b>Pong!<b>\n`%sms`\n" % (duration)
-        ╰━ Masa Hidup : {uptime}
+        <b>Arab - UbotPrem!!</b>
+        <b>Pong!</b> {ping} ms\n
+        ╰━ <b> expired:</b> {remaining_days}\n
+        ╰━ <b> Masa Hidup:</b> {uptime}
         """
         )
     await ping_.delete()
