@@ -146,7 +146,7 @@ async def pingme(client, message):
     await message.reply_text(
         f"""
         <b>Arab - UbotPrem!!</b>
-        <b>Pong!</b> {ping} ms\n
+        **Pong!**\n`%sms`\n" % (duration)
         ╰━ <b> expired:</b> {remaining_days}\n
         ╰━ <b> Masa Hidup:</b> {uptime}
         """
