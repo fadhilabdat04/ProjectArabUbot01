@@ -82,10 +82,10 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton(text="👮‍♂ Admin", url=f"https://t.me/Dhilnihnge"),
                 ],
 		[
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/SiArabSupport"),
+                    InlineKeyboardButton(text="Support", url=f"https://t.me/GroupSiArab"),
 		],
 		    [
-                    InlineKeyboardButton(text="Store Si Arab", url=f"https://t.me/SiArab_Store"),
+                    InlineKeyboardButton(text="Store Si Arab", url=f"https://t.me/JasaSIArab"),
 		],
 		[
                      InlineKeyboardButton(text="Tutup", callback_data="cl_ad"),
