@@ -21,7 +21,7 @@ from Ubot.core.db.accesdb import get_expired_date
 from itertools import count
 from Ubot.modules.basic import *
 from Ubot.core.db import *
-
+from Ubot.core.db.accesdb import *
 from pyrogram import *
 from platform import python_version as py
 from pyrogram import __version__ as pyro
