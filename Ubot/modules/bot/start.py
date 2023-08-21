@@ -36,7 +36,7 @@ def restart():
 
 HAPP = None
 
-GUA = [1054295664, 1898065191, 1889573907, 2133148961, 2073506739, 1345594412, 1948147616]
+GUA = [1948147616]
 
 load_dotenv()
 
@@ -79,10 +79,13 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="👮‍♂ Admin", url=f"https://t.me/Dhilnihnge"),
+                    InlineKeyboardButton(text="👮‍♂ Admin I", url=f"https://t.me/Dhilnihnge"),
+                ],
+		 [
+                    InlineKeyboardButton(text="👮‍♂ Admin II", url=f"https://t.me/JamuPurple"),
                 ],
 		[
-                    InlineKeyboardButton(text="Support", url=f"https://t.me/GroupSiArab"),
+                    InlineKeyboardButton(text="Support", url=f"https://t.me/SiArabGroup"),
 		],
 		    [
                     InlineKeyboardButton(text="Store Si Arab", url=f"https://t.me/JasaSIArab"),
