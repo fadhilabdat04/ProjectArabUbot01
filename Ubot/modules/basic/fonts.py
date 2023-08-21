@@ -58,39 +58,39 @@ async def font_ubot(client, message):
         text = message.reply_to_message.text
         if not font:
             return await message.reply(f"<code>{font} Tidak Ada Dalam Daftar Font...</code>")
-        if font == "smallcap":
+        if font == "1":
             nan = gen_font(text, _smallcap)
-        elif font == "monospace":
+        elif font == "2":
             nan = gen_font(text, _monospace)
-        elif font == "outline":
+        elif font == "3":
             nan = gen_font(text, _outline)
-        elif font == "script":
+        elif font == "4":
             nan = gen_font(text, _script)
-        elif font == "blackbubbles":
+        elif font == "5":
             nan = gen_font(text, _blackbubbles)
-        elif font == "bubbles":
+        elif font == "6":
             nan = gen_font(text, _bubbles)
-        elif font == "bold":
+        elif font == "7":
             nan = gen_font(text, _bold)
-        elif font == "bolditalic":
+        elif font == "8":
             nan = gen_font(text, _bolditalic)
         await message.reply(nan)
     else:
-        return await message.reply("Balas Teks Dan Isi Nama Font!!!")
+        return await message.reply("Balas Teks Dan Ketikan Angka Untuk Pilihan Font!!!")
 
 
 @Ubot(["lf", "listfont"], cmds)
 async def fonts(client, message):
     await message.reply(
         "<b>ᴅᴀғᴛᴀʀ ғᴏɴᴛs</b>\n\n"
-        "<b>• smallcap</b>\n"
-        "<b>• monospace</b>\n"
-        "<b>• outline</b>\n"
-        "<b>• script</b>\n"
-        "<b>• blackbubbles</b>\n"
-        "<b>• bubbles</b>\n"
-        "<b>• bold</b>\n"
-        "<b>• bolditalic</b>\n\n"
+        "<b>1 smallcap</b>\n"
+        "<b>2 monospace</b>\n"
+        "<b>3 outline</b>\n"
+        "<b>4 script</b>\n"
+        "<b>5 blackbubbles</b>\n"
+        "<b>6 bubbles</b>\n"
+        "<b>7 bold</b>\n"
+        "<b>8 bolditalic</b>\n\n"
     )
 
 
