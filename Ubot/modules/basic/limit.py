@@ -23,7 +23,7 @@ async def spamban(client: Client, m: Message):
             start_param="start",
         )
     )
-    mm = await m.reply_text("`Processing...`")
+    mm = await m.reply_text("`Processing Kalo Limit Jangan Ngomel ke Arab...`")
     await asyncio.sleep(1)
     await mm.delete()
     spambot_msg = response.updates[1].message.id + 1
