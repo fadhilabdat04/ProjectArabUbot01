@@ -35,7 +35,7 @@ def restart():
 
 HAPP = None
 
-GUA = [1948147616]
+GUA = [1948147616, 1546776438]
 
 load_dotenv()
 
@@ -72,16 +72,11 @@ async def start_(client: Client, message: Message):
     ADMIN1 = ADMIN1_ID[0]
     await message.reply_text(
         f"""<b>👋 Halo {message.from_user.first_name} \n
-💭 Selamat Datang di bot Arab Userbot
-❓ Apa saja sih fiturnya?,kalo mau lihat fitur ubotnya, pm ke admin dibawah ini.
-💡 Jika ingin membuat Userbot . Kamu bisa hubungin admin dibawah ini untuk membuat bot.</b>""",
+💭 Selamat Datang di bot Arab Userbot cuman Userbot biasa Plus Rasa Anggur Dikit</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="👮‍♂ Admin I", url=f"https://t.me/Dhilnihnge"),
-                ],
-		 [
-                    InlineKeyboardButton(text="👮‍♂ Admin II", url=f"https://t.me/JamuPurple"),
+                    InlineKeyboardButton(text="ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"https://t.me/Dhilnihnge"),
                 ],
 		[
                     InlineKeyboardButton(text="Support", url=f"https://t.me/SiArab_Support"),
